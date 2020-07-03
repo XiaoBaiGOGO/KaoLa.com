@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表页</title>
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/pagination.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<body>
+    <div id="page1"></div>
+    <!-- 内容块 -->
+    <main>
+        <div class="paixu">
+            <button>默认排序</button>
+            <button>升序排序</button>
+            <button>降序排序</button>
+            <div class="priceInputs">
+                <label for=""><input type="text" placeholder="￥"></label>
+                <p>-</p>
+                <label for=""><input type="text" placeholder="￥"></label>
+                <a href="">清空</a>
+                <span>确定</span>
+            </div>
+        </div>
+
+        <div class="list clear_fix">
+            <ul>
+                <!-- <li class="goods">
+                    <div class="goodswrap">
+                        <a href="./details.html" target="_blank">
+                            <img src="../image/list/itemsale.jpg" />
+                        </a>
+                        <div class="desc clear_fix">
+                            <p class="price">
+                                <span>
+                                    <i>￥</i>
+                                    49.9
+                                </span>
+                                <span>
+                                    <del>￥69.9</del>
+                                </span>
+                            </p>
+                            <div class="titlewrap clear_fix">
+                                <a href="" class="title">
+                                    <h2>雪玲妃氨基酸洗面奶女补水保湿男500g控油深层清洁毛孔除螨洁面乳</h2>
+                                </a>
+                            </div>
+                            <p class="saelsinfo">
+                                <span>3期免息</span>
+                            </p>
+                            <p class="goodsinfo clear_fix">
+                                <a href="./details.html">
+                                    <img src="./image/list/liaotian.png " alt=" "> 562
+                                </a>
+                                <span>中国</span>
+                            </p>
+                            <p class="selfflag ">考拉海购自营</p>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div class="pagelist">
+            <div class="m-style page ">
+            </div>
+        </div>
+    </main>
+
+
+    <div id="page2"></div>
+
+
+    
+    <script src="../jq/jquery-3.2.1.min.js"></script>
+    <script src="../jq/jquery.lazyload.js"></script>
+    <script src="../jq/jquery.pagination.js"></script>
+    <script src="../js/list.js"></script>
+    
+
+    <script>
+        $(function(){
+            $("#page1").load("./_header.html");
+            $("#page2").load("./_footer.html");
+        })
+         
+    </script>
+</body>
+</html>

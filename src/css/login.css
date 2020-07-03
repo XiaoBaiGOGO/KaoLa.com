@@ -1,0 +1,221 @@
+@charset "UTF-8";
+body {
+  background: #f8f8f8 !important;
+}
+
+/*header*/
+#docHead {
+  border-bottom: 1px solid #e8e8e8;
+  height: 100px;
+  background: #fff;
+}
+#docHead .docHeadWrap {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#docHead .docHeadWrap a:nth-child(1) {
+  width: 330px;
+  height: 65px;
+  background-image: url(../image/index/logo.png);
+  background-repeat: no-repeat;
+  background-size: 64%;
+}
+#docHead .docHeadWrap a:nth-child(2) {
+  width: 504px;
+  height: 100px;
+  background-image: url(../image/login/heaLeft.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 36px;
+}
+
+#main-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  height: 600px;
+}
+#main-wrap .default-img {
+  position: absolute;
+  background: url(../image/login/default-img.png) no-repeat;
+  left: 10px;
+  top: 50%;
+  margin-top: -101px;
+  width: 400px;
+  height: 203px;
+}
+#main-wrap #login-wrap {
+  position: absolute;
+  z-index: 2;
+  top: 65px;
+  right: 40px;
+  border: 1px solid #eaeaea;
+  width: 350px;
+  font-size: 12px;
+  background-color: #fff;
+}
+#main-wrap .top {
+  position: relative;
+  height: 52px;
+  margin-bottom: 18px !important;
+  font-size: 16px;
+  line-height: 52px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+#main-wrap .top p {
+  color: #e31436;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login_main {
+  min-height: 220px;
+  padding: 0 40px;
+  /* 鐧诲綍鎸夐挳 */
+}
+.login_main .input-pwa-wrap {
+  margin-bottom: 20px;
+  position: relative;
+  padding: 0;
+  width: 270px;
+}
+.login_main .input-pwa-wrap .icon {
+  height: 20px;
+  width: 36px;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  text-align: right;
+}
+.login_main #fm-smscode {
+  padding-left: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #d5d5d5;
+  border-radius: 2px;
+  outline: none;
+  font-size: 14px;
+}
+.login_main .send-btn {
+  font-size: 14px;
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #eee;
+  border-left: 1px solid #d5d5d5;
+}
+.login_main .send-btn a {
+  color: #333;
+}
+.login_main .fm-btn {
+  width: 270px;
+  margin-bottom: 10px;
+}
+.login_main .fm-btn .btn {
+  width: 100%;
+  background-color: #e31436;
+  background-image: none;
+  border: 0;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.kl-account_proto {
+  font-size: 13px;
+  color: #999;
+  margin: 0 40px 10px;
+  text-align: center;
+}
+.kl-account_proto a {
+  text-decoration: underline;
+}
+.kl-account_proto a:hover {
+  color: #51b8f1;
+}
+
+.a-bottom {
+  padding: 10px 40px;
+  height: 42px;
+  font-size: 14px;
+  border-top: 1px solid #efefef;
+  box-sizing: border-box;
+}
+.a-bottom .third-login {
+  width: 160px;
+  margin: 0 auto;
+}
+.a-bottom .third-login .thirdicon {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+}
+.a-bottom .third-login .thirdicon:nth-child(2) a {
+  background-position: -32px 0;
+}
+.a-bottom .third-login .thirdicon:nth-child(3) a {
+  background-position: -64px 0;
+}
+.a-bottom .third-login .thirdicon:nth-child(4) a {
+  background-position: -96px 0;
+}
+.a-bottom .third-login .thirdicon:nth-child(5) a {
+  background-position: -162px 0;
+}
+.a-bottom .third-login .a-icon {
+  display: inline-block;
+  width: 30px;
+  height: 23px;
+  background: url(../image/login/a-icon.png) no-repeat;
+  background-size: cover;
+}
+
+#aboutNESt {
+  border-top: 1px solid #eaeaea;
+  position: relative;
+  padding: 20px 0;
+  background: #ffffff;
+  line-height: 26px;
+  text-align: center;
+  color: #c2c2c2;
+}
+#aboutNESt a {
+  color: #c2c2c2;
+}
+#aboutNESt .m-license {
+  margin-left: 20px;
+}
+#aboutNESt .m-license img {
+  margin-top: -2px;
+}
+#aboutNESt .m-license {
+  margin-left: 20px;
+}
+#aboutNESt .f-tac .KXYZ a:first-child img {
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+}
+#aboutNESt .f-tac .KXYZ a:last-child img {
+  height: 30px;
+  margin: 5px 0 0 10px;
+}
+
+/*# sourceMappingURL=login.css.map */

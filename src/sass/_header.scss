@@ -1,0 +1,553 @@
+@charset "UTF-8";
+/*头部*/
+/*!头部*/
+
+.topNavWrap,
+.docHeadWrap,
+#topTab {
+    width: 1090px;
+    margin: 0 auto;
+}
+.topAd {
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    a {
+        position: absolute;
+        left: 50%;
+        top: 0;
+    }
+    img {
+        position: relative;
+        left: -50%;
+        top: 0;
+    }
+}
+
+#topNav {
+    position: relative;
+    background: #000;
+    border-bottom: 1px solid #ededee;
+    color: #999;
+    .topNavWrap {
+        position: relative;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 auto;
+    }
+}
+
+.topNavLeft {
+    float: left;
+    .login {
+        margin-left: 16px;
+    }
+    .sep {
+        padding: 0 10px;
+    }
+}
+
+.topNavLeft2 {
+    float: left;
+    padding-left: 30px;
+    a {
+        position: relative;
+        .imgAntxr {
+            position: absolute;
+            background: #fff;
+            left: -36px;
+            top: 30px;
+            padding: 5px 5px 0;
+            border: 1px solid rgb(228, 228, 228);
+            display: none;
+            z-index: 10000;
+            img {
+                width: 116px;
+                height: 116px;
+            }
+        }
+    }
+    &:hover .imgAntxr  {
+        display: block;
+    }
+}
+
+.topNavRight {
+    float: right;
+    li {
+        float: left;
+        .toplevel {
+            padding: 0 14px 0 8px;
+        }
+    }
+    li:nth-child(3) {
+        .mcDropMenu a:nth-child(4) {
+            border-bottom: 1px solid #e8e8ea;
+        }
+        .mcDropMenu a:nth-child(7) {
+            border-bottom: 1px solid #e8e8ea;
+        }
+        .mcDropMenu a:nth-child(9) {
+            border-bottom: 1px solid #e8e8ea;
+        }
+    }
+    li:nth-last-child(2) {
+        .mcDropMenu a:nth-child(1) {
+            border-bottom: 1px solid #e8e8ea;
+        }
+    }
+}
+
+.mcDropMenuBox {
+    position: relative;
+    z-index: 202;
+    border: 1px solid transparent;
+    left: -3px;
+    top: -1px;
+    .topNavHolder {
+        position: relative;
+        zoom: 1;
+        padding: 0 24px 0 16px!important;
+    }
+    .mcDropMenu {
+        position: absolute;
+        left: -1px;
+        top: 30px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .12);
+        padding: 4px 15px 12px 14px;
+        display: none;
+        a {
+            display: block;
+            word-wrap: normal;
+            white-space: nowrap;
+            height: 28px;
+            line-height: 28px;
+            cursor: pointer;
+        }
+    }
+    &:hover {
+        background: #fff;
+        .mcDropMenu {
+            display: block;
+            background-color: #fff;
+            border: 1px solid #e8e8ea;
+            border-top: 0;
+        }
+        a:hover {
+            color: #ff1e32;
+        }
+    }
+}
+
+
+/*搜索框*/
+
+#search {
+    background: #fff;
+}
+
+#docHead {
+    background: #fff;
+    z-index: 103;
+    .docHeadWrap {
+        position: relative;
+        height: 100px;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+    }
+    .logo_kaola_new {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 330px;
+        height: 65px;
+        line-height: 65px;
+        outline: none;
+        cursor: pointer;
+        z-index: 9;
+        background-repeat: no-repeat;
+        background-position: 0;
+        background-size: auto 65px;
+        background-image: url(../image/index/logo.png);
+    }
+    #searchiptbox {
+        position: absolute;
+        left: 343px;
+        top: 33px;
+        z-index: 73;
+    }
+    #topsearch {
+        width: 510px;
+        height: 40px;
+        padding-left: 1px;
+        background-color: #ff2337;
+        border-radius: 40px;
+        .wrap {
+            float: left;
+            margin: 2px 1px;
+            padding: 6px 39px 6px 30px;
+            background-color: #fff;
+            border-radius: 24px 0 0 24px;
+        }
+        #topSearchInput {
+            width: 410px;
+            height: 24px;
+            line-height: 24px;
+            border: 0;
+            font-size: 13px;
+            font-style: italic;
+        }
+        .topsearchboxBackGround {
+            width: 60px;
+            height: 40px;
+            background: #ff2337;
+            background-image: linear-gradient(270deg, #ff2e64, #ff0003);
+            border-radius: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            #topSearchBtn {
+                display: inline-block;
+                height: 40px;
+                width: 50px;
+                font-size: 19px;
+                line-height: 40px;
+                color: #fff;
+                text-align: center;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 5px;
+                background: url(../image/index/topSearc.png) no-repeat 50%;
+                background-size: 41%;
+            }
+            &:hover {
+                background: #ff2d59;
+                background-image: linear-gradient(270deg, #f85a7d, #ff3234);
+            }
+        }
+        .w-icon-26 {
+            position: absolute;
+            left: 10px;
+            top: 13px;
+        }
+    }
+    #search_list {
+        line-height: 22px;
+        margin-top: 2px;
+        width: 461px;
+        height: 22px;
+        overflow: hidden;
+    }
+}
+
+.shopcartnew {
+    display: block;
+    position: absolute;
+    right: 76px;
+    top: 33px;
+    width: 106px;
+    height: 36px;
+    background-color: #fff;
+    line-height: 36px;
+    font-size: 14px;
+    text-align: center;
+    -moz-border-radius: 36px;
+    -webkit-border-radius: 36px;
+    border-radius: 36px;
+    border: 2px solid #ff1e32;
+    color: #333;
+    &:hover {
+        color: #ff1e32;
+        background-color: #fff4f5;
+    }
+    .shop-cart-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 2px;
+        margin-bottom: -5px;
+        background: url(../image/index/shopcall.png) no-repeat;
+        background-size: 100%;
+    }
+}
+
+
+/*二级菜单*/
+
+#topTabBox {
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    z-index: 102;
+    #funcTab,
+    #topTab {
+        position: relative;
+        height: 40px;
+    }
+    #topTab {
+        zoom: 1;
+        line-height: 40px;
+        z-index: 102;
+        position: relative;
+        height: 40px;
+    }
+    .navitm-cats {
+        float: left;
+        height: 40px;
+        width: 164px;
+        background: red;
+        background: -webkit-linear-gradient(90deg, red, #ff3264);
+        background: linear-gradient(90deg, red, #ff3264);
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        padding-left: 0;
+        overflow: hidden;
+        /*其他页面隐藏*/
+        &:hover{
+           overflow: visible; 
+        }
+    }
+
+    .toplevel {
+        display: inline-block;
+        height: 40px;
+        width: 164px;
+        line-height: 40px;
+        text-align: left;
+        border-bottom: 1px solid #ff5160;
+    }
+    .lineicon {
+        display: inline-block;
+        width: 15px;
+        height: 12px;
+        margin: 0 24px 0 15px;
+        overflow: hidden;
+        i {
+            display: block;
+            width: 15px;
+            height: 0px;
+            border-top: 2px solid #fff;
+            margin-bottom: 3px;
+        }
+    }
+    .catitmlst {
+        background: linear-gradient(to right, #f00, #ff3264);
+        padding: 0 2px 0 1px;
+    }
+    .catli {
+        padding-left: 10px;
+        width: 148px;
+        cursor: pointer;
+        text-align: left;
+        padding-right: 3px;
+        .iocn {
+            width: 20px;
+            height: 20px;
+            padding: 0 20px 0 4px;
+            vertical-align: middle;
+        }
+        .iocn2 {
+            display: none;
+        }
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            width: 70px;
+            height: 30px;
+            line-height: 30px;
+            white-space: nowrap;
+        }
+        i {
+            display: inline-block;
+            vertical-align: middle;
+            color: #ff96ad;
+            font-size: 19px;
+            width: 16px;
+        }
+        .seg {
+            display: block;
+            position: relative;
+            bottom: 2px;
+            left: -7px;
+            width: 154px;
+            height: 1px;
+            background: #ff5160;
+            // margin-top: -1px;
+        }
+        &:hover {
+            background-color: #fff;
+            span {
+                color: #ff1e32;
+            }
+            .iocn {
+                display: none;
+            }
+            .iocn2 {
+                display: inline-block;
+            }
+            .seg {
+                background: #fff;
+            }
+            #m-ctgcard {
+                display: block;
+            }
+        }
+    }
+    #m-ctgcard {
+        transition: height .4s;
+        position: absolute;
+        z-index: 75;
+        top: 40px;
+        left: 164px;
+        width: 930px;
+        overflow: hidden;
+        max-height: 459px;
+        height: 459px;
+        background: #fff;
+        border: 1px solid #ff1a33;
+        border-left-width: 0;
+        text-align: left;
+        color: #333;
+        cursor: auto;
+        // 隐藏显示
+        // display: block;
+        display: none;
+    }
+    .m-ctglist {
+        margin: 0 20px 20px 15px;
+        width: 658px;
+        max-height: 440px;
+        overflow: hidden;
+    }
+    .m-ctgtbl {
+        width: 100%;
+        font-size: 0;
+        .f_cb {
+            height: auto;
+        }
+        .litd {
+            float: left;
+            width: 50%;
+            vertical-align: top;
+            position: relative;
+        }
+        .item {
+            display: inline-block;
+            padding: 0;
+            margin: 0 25px 17px 5px;
+            vertical-align: top;
+            width: 275px;
+            height: auto;
+            line-height: normal;
+            overflow: hidden;
+        }
+        .title {
+            height: 34px;
+            line-height: 34px;
+            font-size: 14px;
+            font-weight: 700;
+            .cat2 {
+                display: inline;
+                color: #333;
+                text-align: left;
+            }
+        }
+        .ctgnamebox {
+            margin-left: -8px;
+            font-size: 0;
+            a {
+                display: inline-block;
+                height: 14px;
+                line-height: 14px;
+                padding: 0 10px;
+                margin-top: 19px;
+                font-size: 13px;
+                color: #666;
+                &:hover {
+                    text-decoration: underline;
+                    background: #fff;
+                }
+            }
+            .f-fcred3 {
+                color: #ff1e32;
+            }
+        }
+    }
+    .m-brandbox {
+        height: 322px;
+        overflow: hidden;
+        width: 218px;
+        padding: 9px 8px 0 11px;
+        background: #f6f6f6;
+        a {
+            float: left;
+            height: 108px;
+            padding: 0;
+            img {
+                display: inline-block;
+                width: 104px;
+                height: 104px;
+                border: 1px solid #eaeaea;
+                margin: 0 3px 2px 0;
+            }
+        }
+    }
+    .imgbox {
+        width: 237px;
+        box-sizing: border-box;
+        padding: 20px 18px 20px 11px;
+        background: #f6f6f6;
+        img {
+            width: 215px;
+            height: 88px;
+        }
+    }
+    .underTitleMiddleLine {
+        height: 1px;
+        width: 642px;
+        background: #eaeaea;
+        position: absolute;
+        top: 34px;
+        z-index: 100;
+    }
+    #funcTab {
+        z-index: 72;
+        float: left;
+        padding-left: 25px;
+        li {
+            float: left;
+            height: 40px;
+            overflow: hidden;
+            padding: 0 20px;
+            a {
+                display: block;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 700;
+                color: #333;
+            }
+        }
+        li:first-child a {
+            color: #ff1e32;
+        }
+        a:hover {
+            color: #ff1e32;
+        }
+    }
+}
+
+
+/*!底部*/
+
+.footer {
+    margin-top: 80px;
+    height: 464px;
+    width: 100%;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}

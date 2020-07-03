@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/*!公共样式*/
+
+
+/*!内容区*/
+
+.pc-index-module {
+    width: 1100px;
+    margin: 0 auto!important;
+}
+.navitm-cats {
+    overflow: visible!important; 
+}
+
+@import "header";
+@import "lunbo";
+@import "main";
+@import "footer";

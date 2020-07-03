@@ -1,0 +1,505 @@
+@charset "utf-8";
+
+/*内容部分*/
+
+.m-zoneimage .item {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 308px;
+    .imgwrap {
+        width: 1349px;
+        margin-left: -674.5px;
+        background-size: 1920px 308px;
+        background-image: url(../image/index/xinren.png);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        background-position: center 0;
+    }
+    .hotarea {
+        top: 0%;
+        left: 0%;
+        width: 99.82%;
+        height: 100%;
+        position: absolute;
+        // cursor: pointer;
+    }
+}
+
+
+/*!户外运动*/
+
+.w-title-line {
+    .tit {
+        float: left;
+        margin-right: 20px;
+    }
+    .big {
+        font-size: 22px;
+        color: #333;
+        font-weight: 700;
+    }
+    .w-taglist {
+        position: relative;
+        top: 3px;
+        color: #999;
+        font-size: 14px;
+        li {
+            float: left;
+            margin-right: 14px;
+            .colors {
+                color: rgb(254, 6, 12);
+            }
+            a {
+                color: rgb(102, 102, 102);
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .u-btn-more {
+        position: absolute;
+        right: 0;
+        top: 24px;
+        font-size: 14px;
+        color: #999;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.cont {
+    background: #fff;
+    border-left: 0;
+    .partl {
+        float: left;
+        position: relative;
+        height: 541px;
+        img {
+            background: url(../image/index/partl_xie.jpg) no-repeat 50% #fff;
+        }
+        .secondlist {
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+            li {
+                float: left;
+                margin: 0px 18px 8px 0;
+                width: 82px;
+                height: 42px;
+                a {
+                    display: block;
+                    height: 18px;
+                    padding: 11px 0;
+                    overflow: hidden;
+                    font-size: 12px;
+                    color: 12px;
+                    border-radius: 40px;
+                    background: #fff;
+                    border: 1px solid #eee;
+                    color: #333;
+                    width: 80px;
+                    text-align: center;
+                    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
+                }
+                a:hover {
+                    color: #ff1e32;
+                    text-decoration: none;
+                    background: hsla(0, 0%, 100%, .7);
+                }
+            }
+        }
+    }
+    .partm {
+        width: 550px;
+        border: 1px solid #e9e9e9;
+        border-width: 1px 0;
+        float: left;
+        position: relative;
+        .itm1 {
+            float: left;
+            text-align: center;
+            border: 1px solid #e9e9e9;
+            border-width: 0 1px 1px 0;
+            width: 274px;
+            height: 269px;
+            a {
+                display: block;
+                padding: 30px 0 0;
+                width: 274px;
+                height: 200px;
+                color: #333;
+            }
+            .tit {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 1;
+                margin: 10px 0;
+            }
+            .desc {
+                font-size: 14px;
+                line-height: 20px;
+                margin: 10px 10px 14px;
+            }
+            .tit,
+            desc {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+        li:nth-child(2)~li {
+            border-bottom: 0;
+        }
+    }
+    .party {
+        float: left;
+        position: relative;
+        width: 219px;
+        border: 1px solid #e9e9e9;
+        border-width: 0 1px 1px 0;
+        .title {
+            font-size: 16px;
+            line-height: 58px;
+            padding: 0 0 0 10px;
+            color: #333;
+            font-weight: 700;
+            height: 58px;
+            border: 1px solid #e9e9e9;
+            border-left-width: 0;
+            position: relative;
+        }
+        .img_pagebox {
+            position: absolute;
+            top: 50%;
+            margin-top: -3px;
+            right: 9px;
+            li {
+                float: left;
+                margin: 0 2px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                text-decoration: none;
+                cursor: pointer;
+                background: #e1e1e1;
+            }
+            li:hover {
+                background: #333;
+            }
+        }
+    }
+    .prolist {
+        position: relative;
+        width: 100%;
+        height: 480px;
+        overflow: hidden;
+        .itemgroup {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+    }
+    .itemsale {
+        padding: 27px 14px 0;
+        height: 92px;
+        border-bottom: 1px dotted #e9e9e9;
+    }
+    .pic {
+        position: relative;
+        float: left;
+        margin: 0 7px 0 4px;
+        zoom: 1;
+    }
+    .tit {
+        height: 36px;
+        line-height: 18px;
+        overflow: hidden;
+        font-size: 12px;
+    }
+    .curprice {
+        margin-top: 6px;
+        font-size: 18px;
+        color: #ff1e32;
+        strong {
+            font-size: 20px;
+            font-weight: 700;
+            position: relative;
+            left: -8px;
+        }
+        .item2 {
+            color: #999;
+            margin: 0 0 0 -5px;
+            font-size: 14px;
+            text-decoration: line-through;
+        }
+    }
+}
+
+.w-logolist {
+    margin: 20px 0 40px;
+    line-height: 167px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    .tit {
+        height: 48px;
+        line-height: 48px;
+        font-size: 16px;
+        font-weight: 700;
+        text-indent: 20px;
+        color: #000;
+        border-bottom: 1px solid #eaeaea;
+    }
+    .brandListContainer {
+        margin-right: -1px;
+        width: 1111px;
+    }
+    .pic {
+        position: relative;
+        float: left;
+        width: 219px;
+        height: 167px;
+        text-align: center;
+        border-left: 1px solid #e9e9e9;
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        &:hover .follow {
+            display: inline-block;
+        }
+    }
+    .pic:first-child {
+        border-left: 0;
+    }
+    .follow {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        background-size: 100%;
+        background-image: url(../image/index/xin2.png);
+        display: none;
+    }
+    .toast {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -12px;
+        margin-left: -38px;
+        padding: 0 20px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        background-color: #000;
+        filter: alpha(opacity=0);
+        -moz-border-radius: 12px;
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        color: #fff;
+        font-size: 12px;
+        opacity: 0;
+        display: node;
+    }
+}
+
+
+/*!热门品牌*/
+
+.m-popbrands {
+    .big {
+        margin-right: 10px;
+    }
+    .change {
+        position: absolute;
+        top: 26px;
+        right: 4px;
+        font-size: 14px;
+        color: #999;
+        img {
+            width: 12px;
+            height: 12px;
+        }
+        &:hover img {
+            transform: rotate(360deg);
+            transition: 1s;
+        }
+    }
+    .cnt {
+        height: 355px;
+        overflow: hidden;
+    }
+    .fixedBrandWrap {
+        position: relative;
+        float: left;
+        margin-right: -220px;
+        width: 219px;
+        overflow: hidden;
+        border-right: 1px solid #e9e9e9;
+    }
+    .fixedBrand {
+        position: relative;
+        width: 219px;
+        height: 355px;
+        .itm {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 219px;
+            height: 100%;
+            text-align: center;
+            img {
+                width: 219px;
+                height: 219px;
+            }
+            .txt {
+                position: relative;
+                height: 136px;
+                background-color: #151515;
+                color: #fff;
+                z-index: 12;
+                opacity: .8;
+            }
+            .name {
+                padding-top: 41px;
+                padding-bottom: 4px;
+                font-size: 20px;
+                font-weight: 700;
+                margin: 0 12px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .desc {
+                font-size: 12px;
+                margin: 0 12px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+    .line {
+        position: absolute;
+        top: 219px;
+        left: 0;
+        width: 222px;
+        height: 2px;
+        z-index: 10;
+        .step {
+            float: left;
+            margin-right: 2px;
+            width: 72px;
+            height: 3px;
+            background-color: #555;
+        }
+    }
+    .recomBrand {
+        float: left;
+        margin: 0 -1px 0 220px;
+        border-top: 1px solid #e9e9e9;
+        .itm {
+            position: relative;
+            float: left;
+            width: 219px;
+            height: 176px;
+            border-right: 1px solid #e9e9e9;
+            border-bottom: 1px solid #e9e9e9;
+            overflow: hidden;
+        }
+        .info {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            background: #fff;
+            img {
+                position: relative;
+                top: 0;
+                margin: 12px auto 0;
+                display: block;
+                width: 120px;
+                height: 120px;
+                transition: top .3s ease, transform .3s ease;
+                transform: scale(1);
+            }
+            .desc {
+                margin: 10px -90px 0;
+                text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
+                font-size: 14px;
+                font-weight: 700;
+                transition: opacity .2s ease .08s;
+            }
+        }
+        .actions {
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all .3s ease;
+        }
+        .follow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 52px;
+            height: 20px;
+            line-height: 20px;
+            color: #999;
+            border: 1px solid #999;
+            border-radius: 20px;
+            &:hover {
+                background-color: #f5f5f5;
+            }
+        }
+        .followers {
+            margin: 99px 0 8px;
+            color: #999;
+        }
+        .enter {
+            display: block;
+            margin: 0 auto;
+            width: 80px;
+            height: 36px;
+            box-sizing: border-box;
+            line-height: 32px;
+            color: #ff1e32;
+            background: #fff;
+            border-radius: 32px;
+            border: 2px solid #ff1e32;
+            font-size: 14px;
+            &:hover {
+                background-color: #fff4f5;
+            }
+        }
+        .itm:hover {
+            img {
+                top: -19px;
+                transform: scale(.66);
+            }
+            .desc {
+                opacity: 0;
+            }
+            .actions {
+                opacity: 1;
+            }
+        }
+    }
+}

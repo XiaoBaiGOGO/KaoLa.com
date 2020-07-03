@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/shopping.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<body>
+    <div id="page1">
+        <!-- 菜单 -->
+        <nav id="topNav">
+            <div class="topNavWrap">
+                <div class="topNavLeft">
+                    <span>考拉欢迎你！</span>
+                    <a href="./reg.html" class="login">登录</a>
+                    <span class="sep">|</span>
+                    <a href="./login.html">免费注册</a>
+                </div>
+                <div class="topNavLeft2">
+                    <a href="">手机考拉
+                        <span class="imgAntxr">
+                            <img src="../image/index/phone_kaola.png" alt="">
+                            <strong class="txt" style="color:#000">
+                                新人下载APP <br>领10元满减红包
+                                <span class="arrow">
+                                    <span class="arr"></span>
+                                    <span class="arr1"></span>
+                                </span>
+                            </strong>
+                        </span>
+                        
+                    </a>
+                </div>
+                <ul class="topNavRight">
+                    <li><a href="" class="toplevel">每日签到</a>
+                        <span class="sep">|</span></li>
+                    <li><a href="" class="toplevel">我的订单</a>
+                        <span class="sep">|</span></li>
+                    <li>
+                        <div class="mcDropMenuBox">
+                            <a href="" class="toplevel topNavHolder">个人中心
+                                    <i></i>
+                                    </a>
+                            <div class="mcDropMenu">
+                                <a href="">我的优惠券</a>
+                                <a href="">我的购物津贴</a>
+                                <a href="">我的红包</a>
+                                <a href="">我的考拉豆</a>
+                                <a href="">帐号管理</a>
+                                <a href="">我的实名认证</a>
+                                <a href="">我的发票抬头</a>
+                                <a href="">我收藏的商品</a>
+                                <a href="">我关注的品牌</a>
+                                <a href="">售后管理 </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mcDropMenuBox">
+                            <a href="" class="toplevel topNavHolder">客户服务
+                                    <i></i>
+                                    </a>
+                            <div class="mcDropMenu">
+                                <a href="">联系客服 </a>
+                                <a href="">帮助中心 </a>
+                                <a href="">知识产权保护 </a>
+                                <a href="">规则中心</a>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mcDropMenuBox">
+                            <a href="" class="toplevel topNavHolder">充值中心
+                                    <i></i>
+                                    </a>
+                            <div class="mcDropMenu">
+                                <a href="">话费充值 </a>
+                                <a href="">话费充值 </a>
+                                <a href="">AppStore充值卡 </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mcDropMenuBox">
+                            <a href="" class="toplevel topNavHolder">消费者权益
+                                    <i></i>
+                                    </a>
+                            <div class="mcDropMenu">
+                                <a href="">消费者告知书</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mcDropMenuBox">
+                            <a href="" class="toplevel topNavHolder">更多
+                                    <i></i>
+                                    </a>
+                            <div class="mcDropMenu">
+                                <a href="">收藏本站</a>
+                                <a href="">新浪微博</a>
+                                <a href="">微信公众号</a>
+                                <a href="">招商合作</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="toplevel">视频内容</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- 搜索框 -->
+        <div id="search">
+            <header id="docHead">
+                <div class="docHeadWrap">
+                    <h1>
+                        <a href="./index.html" class="logo_kaola_new"></a>
+                    </h1>
+                </div>
+            </header>
+        </div>
+    </div>
+    <main id="mainWrap">
+        <div class="cartbox">
+            <h3 class="m-mycart">
+                <span class="tt">我的购物车 </span>
+                <span class="addrbox float_right">
+                    <em>配送至</em>
+                    <div class="address">
+                        <div id="address_input">浙江省/杭州市/江干区</div>
+                    </div>
+                </span>
+                <span class="tip">
+                    <img src="../image/cart/tip.png" alt="" class="alert">
+                    <span class="msg">
+                        考拉自营商品满88包邮，
+                        <em class="red">再购23.00元包邮</em>
+                        <img src="../image/cart/wen.jpg" alt="" class="alert2">
+                        <a href="">去凑单 ></a>
+                    </span>
+                </span>
+            </h3>
+        </div>
+        <div class="head clear_fix">
+            <div class="col col1">
+                <input type="checkbox" id="selectAll" name="selectAll"  class="u-chk">
+                <label for="" class="lab">全选</label>
+            </div>
+            <div class="col col2">商品信息</div>
+            <div class="col col3">单价(元)</div>
+            <div class="col col4">数量</div>
+            <div class="col col5">金额(元)</div>
+            <div class="col col6">操作</div>
+        </div>
+        <div class="cartbox-wrap">
+
+            <!-- 全选 头 -->
+         
+            <!--  -->
+            <div class="m-cartbox" style="display: none;" >
+        
+                <!-- 列表 -->
+                <div class="m-cart">
+                    <div class="ware">
+                        <input type="checkbox" id="selectAll" name="selectAll"  class="u-chk1">
+                        <strong class="warename">
+                            <a href="" target="_blank" >雪玲妃旗舰店</a>
+                        </strong>
+                    </div>
+                    <div class="goods">
+                        <ul class="m-goods">
+                            <li class="z-hasextends gooditm z-selected  clear_fix">
+                                <div class="col col0">
+                                    <!-- <input type="checkbox" id="selectAll" name="selectAll"  class="u-chk2"> -->
+                                </div>
+                                <div class="col col2">
+                                    <a href="" class="imgwrap" target="_blank" rel="noopener noreferrer">
+                                        <img src="../image/cart/imgwrap.jpg" alt="">
+                                    </a>
+                                    <div class="txtwrap">
+                                        <h3 class="goodtlt">
+                                            <a href="http://" target="_blank" title="雪玲妃氨基酸洗面奶女补水保湿男500g控油深层清洁毛孔除螨洁面乳">雪玲妃氨基酸洗面奶女补水保湿男500g控油深层清洁毛孔除螨洁面乳</a>
+                                        </h3>
+                                        <p title="支持7天无忧退货" class="returninfo">
+                                            <img src="../image/cart/returninfo_img.png" alt="">
+                                            <span>支持7天无忧退货</span>
+                                        </p>
+                                        <div class="goodtax">
+                                            <span class="m-actlabel ">
+                                                <em class="fenqi">支持3期免息</em>
+                                                <div class="actlabel_img">
+                                                    <img src="../image/cart/m-actlabel_img.png" alt="">
+                                                        <strong class="txt" style="color:#000">
+                                                        <em class="colors">用分期 享免息</em> <br>考拉APP专享
+                                                         <span class="arrow">
+                                                             <span class="arr"></span>
+                                                             <span class="arr1"></span>
+                                                         </span>
+                                                        </strong>
+                                                </div>
+                                            </span>
+                                           
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="skudesc">
+                                        <p title="净含量：500g" class="skuline"> 净含量：500g</p>
+                                    </div>
+                                </div>
+                                <div class="col col3">
+                                    <del>119</del><br>
+                                   <span>49.9</span>
+                                </div>
+                                <div class="col col4">
+                                   <span class="u-setcount">
+                                       <span class="minus z-dis">-</span>
+                                       <input type="text" name="tempBuyAmount" class="ipt" max="99" min="1" value="1">
+                                       <span class="plus">+</span>
+                                   </span>
+                                </div>
+                                <div class="col col5">
+                                   <span class="sum sumrow">49.9</span>
+                                </div>
+                                <div class="col col6">
+                                    <a href="" class="u-opt">删除</a>
+                                    <span  class="u-opt">移入我的收藏</span>
+                                </div>
+    
+                            </li>
+                            <div class="cartinfo">
+                                <span class="discount">活动优惠：-￥0</span>
+                                <div class="allsum">
+                                    <span>
+                                        商品应付总计：
+                                        <em class="totalnum ">￥49.9</em>
+                                    </span>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        
+         <!-- 结算 -->
+         <div class="totalbox">
+            <div id="totalbar" class="m-total clear_fix ">
+                <div class="ttbar">
+                    <div class="float_left">
+                        <input type="checkbox" id="selectAll" name="selectAll"  class="u-chk">
+                        <label for="" class="lab">全选</label>
+                        <p>删除选中商品</p>
+                    </div>
+                    <div class="float_right">
+                        <p class="allgoods">已选商品 <em class="num">3</em>件 <span class="itm">总价(不含运费)：<em class="num">¥279.82</em></span> </p>
+                        <p class="allmoney">活动优惠: -¥0 <span class="itm">商品应付总计: ¥279.82</span></p>
+                        <a href="" class="gobuy ">去结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="page2"></div>
+
+
+    
+    <script src="../jq/jquery-3.2.1.min.js"></script>
+    <script src="../jq/jquery.cookie.js"></script>
+    <script src="../js/cart.js"></script>
+
+    <script>
+        $(function(){
+            $("#page2").load("./_footer.html");
+        })
+         
+    </script>
+</body>
+</html>

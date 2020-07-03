@@ -1,0 +1,418 @@
+@charset 'utf-8';
+body{
+    background: #fff!important;
+}
+
+@import "header";
+@import "footer";
+
+.PInfoWrap {
+    width: 1090px;
+    font-size: 14px;
+    margin: 40px auto 0;
+    position: relative;
+    z-index: 1;
+  
+}
+.PImgBox {
+    position: relative;
+    display: inline;
+    float: left;
+    width: 402px;
+    height: 488px;
+    z-index: 1000;
+    #spic {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 400px;
+        height: 400px;
+        cursor: crosshair;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(238, 238, 238);
+        border-image: initial;
+        overflow: hidden;
+        img {
+            width: 400px;
+            height: 400px;
+        }
+        #sf {
+            background-color: rgb(0, 0, 0);
+            opacity: 0.3;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+    }
+    #bf {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        zoom: 1;
+        z-index: 1001;
+        top: 0px;
+        left: 430px;
+        display: none;
+        overflow: hidden;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(237, 237, 237);
+        border-image: initial;
+        background: rgb(255, 255, 255);
+        img {
+            position: absolute;
+            z-index: 1000;
+            width: 800px;
+            height: 800px;
+        }
+    }
+    #ulist {
+        position: absolute;
+        left: 0;
+        top: 412px;
+        width: 402px;
+        height: 70px;
+        overflow: hidden;
+        a {
+            display: inline-block;
+            z-index: 1000;
+            width: 33px;
+            height: 62px;
+            position: absolute;
+            font-size: 38px;
+            color: rgb(102, 102, 102);
+            line-height: 62px;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            padding: 1px 0px;
+            margin: 0px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(238, 238, 238);
+            border-image: initial;
+            text-decoration: none;
+        }
+    }  
+    #list {
+        position: absolute;
+        height: 70px;
+        overflow: hidden;
+        top: -2px;
+        left: 35px;
+        width: 330px;
+        ul {
+            position: absolute;
+            top: 0;
+            padding-left: 10px;
+            z-index: 2;
+            left: 0px;
+            width: 1600px;
+        }
+        li {
+            width: 70px;
+            height: 70px;
+            overflow: hidden;
+            float: left;
+            margin-right: 10px;
+        }
+    }
+    #right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #333;
+    }
+}
+ // 右边
+ .PInfo {
+    position: relative;
+    float: left;
+    width: 658px;
+    margin-left: 30px;
+    font-size: 12px;
+    
+    .product-title {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .m-price-wrap {
+        background-color: #f9f9f9;
+        z-index: 22;
+        margin-bottom: 20px;
+        border-bottom: 1px dotted #ddd;
+        padding-bottom: 4px;
+    }
+    .m-line-title {
+        display: inline-block;
+        width: 75px;
+        color: #666;
+        vertical-align: middle;
+    }
+    .m-price {
+        overflow: hidden;
+        position: relative;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        border-top: 1px dotted #ddd;
+        z-index: 100;
+        font-size: 0;
+        .m-price-title {
+            float: left;
+            line-height: 26px;
+            margin: 8px 0;
+            vertical-align: 4px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+       
+        .m-price-cnt {
+            margin-left: 71px;
+            .currentPrice {
+                font-size: 26px;
+                color: #e31436;
+                font-weight: bold;
+                vertical-align: baseline;
+                line-height: 1;
+                margin: 8px 0;
+            }
+            .PInfo_r {
+                display: inline-block;
+                zoom: 1;
+            }
+            .m-memberLabel {
+                display: inline-block;
+                margin-left: 5px;
+                background-color: #f68587;
+                height: 18px;
+                line-height: 18px;
+                padding: 0 5px;
+                color: #fff;
+                font-size: 12px;
+                vertical-align: 5px;
+                border-radius: 2px;
+            }
+            .addprice {
+                vertical-align: 4px;
+                font-size: 12px;
+                color: #999;
+                margin-left: 14px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .m-huabei-wrap {
+        margin-bottom: 20px;
+        position: relative;
+        .m-staginglabel {
+            display: inline-block;
+            padding: 1px 4px;
+            color: #fff;
+            font-size: 12px;
+            line-height: 18px;
+            height: 18px;
+            background-image: linear-gradient(90deg, #ffb341 0%, #fa5512 100%);
+            border-radius: 2px;
+        }
+        .m-stagingdetail {
+            margin-left: 6px;
+            color: #333;
+            font-size: 12px;
+            vertical-align: sub;
+            line-height: 0;
+        }
+        
+    }
+    .m-vipmember {
+        margin-bottom: 15px;
+        .msg {
+            line-height: 20px;
+            margin-left: 85px;
+            font-size: 0;
+            img {
+                display: inline-block;
+                vertical-align: middle;
+                height: 17px;
+                margin-right: 4px;
+            }
+            .vtxt {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 12px;
+                color: #1e1e1e;
+            }
+            .z-grey {
+                color: #737373;
+            }
+            .becomevip {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 10px;
+                color: #4a90e2;
+                font-size: 12px;
+                text-decoration: normal;
+                cursor: pointer;
+            }            
+        }
+    }
+    .m-buyBox {
+        margin: 30px 0;
+        .buybox {
+            position: relative;
+        }
+        .ctrnum-wrap {
+            display: inline-block;
+            border: 1px solid #ccc;
+            text-align: center;
+            vertical-align: middle;
+            .ctrnum-b {
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                line-height: 20px;
+                color: #333;
+                font-weight: 700;
+                border-right: 0;
+                background-color: #f3f3f3;
+                cursor: default;
+                font-size: 20px;
+            }    
+            .ctrnum-qty {
+                width: 38px;
+                padding: 4px 5px;
+                margin: 0;
+                line-height: 1;
+                height: 14px;
+                font-size: 14px;
+                vertical-align: top;
+                text-align: center;
+                color: #333;
+                border: none;
+                outline: none;
+                box-sizing: content-box;
+            }         
+        }
+    }
+    .buyBtns {
+        display: block;
+        margin-top: 40px;
+        *padding-bottom: 2px;
+        position: relative;
+        a {
+            display: inline-block;
+            margin-right: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        #buyBtn {
+            position: relative;
+            width: 156px;
+            height: 46px;
+            border: 2px solid #d41c44;
+            background-color: #ffeced;
+            color: #d31b44;
+            line-height: 46px;
+            &:hover {
+                color: #f8305b;
+                border-color: #f8305b;
+                background-color: #fffaf8;
+            }
+        }
+        #addCart {
+            width: 180px;
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+            background-color: #e31436;
+            &:hover {
+                background-color: #f5345e;
+                color: #fff;
+            }
+        }
+    }
+    
+}
+.PInfo-standout .m-line-title {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.m-rightbar {
+    z-index: 99;
+    display: none;
+    width: 62px;
+    border: 1px solid #eaeaea;
+    left: 50%;
+    margin-left: 565px;
+    li{
+        float: left;
+    }
+    a {
+        display: block;
+        width: 62px;
+        height: 48px;
+        padding: 12px 0 0;
+        border-bottom: 1px solid #eaeaea;
+        background: #fff;
+        font-size: 12px;
+        cursor: pointer;
+        text-align: center;
+        color: #333;
+        i{
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin: 0px auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .right-bar-icon1 {
+            background-image:url(../image/details/bar-icon1.png);
+        }
+        .right-bar-icon2 {
+            background-image:url(../image/details/bar-icon2.png);
+        }
+        .right-bar-icon3 {
+            background-image:url(../image/details/bar-icon3.png);
+        }
+        .right-bar-icon4 {
+            background-image:url(../image/details/bar-icon4.1.png);
+        }
+        &:hover{
+            color: #ff1e32;
+            .right-bar-icon1 {
+                background-image:url(../image/details/bar-icon1.1.png);
+            }
+            .right-bar-icon2 {
+                background-image:url(../image/details/bar-icon2.1.png);
+            }
+            .right-bar-icon3 {
+                background-image:url(../image/details/bar-icon3.1.png);
+            }
+        }
+        .num {
+            display: none;
+            position: absolute;
+            top: 62px;
+            right: 2px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            font-weight: normal;
+            color: #fff;
+            background: #ff1e32;
+            white-space: nowrap;
+        }
+    }
+}
+

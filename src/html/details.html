@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../css/details.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<body>
+    <div id="page1"></div>
+    <main class="PInfoWrap clear_fix">
+        <div class="PImgBox ">
+            <div id="spic">
+                <img src="" alt="" id="smallpic">
+                <div id="sf"></div>
+            </div>
+            <div id="bf">
+                <img src="" alt="" id="bpic">
+            </div>
+            <div id="ulist">
+                <a href="javascript:;" id="left">&lt;</a>
+                <div id="list">
+                    <ul>
+                    </ul>
+                </div>
+                <a href="javascript:;" id="right">&gt;</a>
+            </div>
+        </div>
+
+        <dl class="PInfo PInfo-standout">
+            <dl class="product-title"></dl>
+            <dd class="m-price-wrap">
+                <div class="m-price">
+                    <span class="m-line-title m-price-title j-price-title">售价</span>
+                    <div class="m-price-cnt">
+                        <span class="PInfo_r currentPrice"></span>
+                        <span class="PInfo_r addprice "></span>
+                    </div>
+                </div>
+                <div class="m-huabei-wrap">
+                    <span class="m-line-title">分期</span>
+                    <span class="m-staginglabel"></span>
+                    <span class="m-stagingdetail">
+                        <strong class="tail1" style="font-size:18px;font-weight: 700;"></strong>
+                        <em>x</em>
+                        <strong class="tail2" style="font-size:13px;"></strong>
+                    </span>
+                    <div></div>
+                </div>
+                <div class="m-vipmember">
+                    <div class="msg">
+                        <img src="../image/details/heika.png" alt="">
+                        <span class="vtxt">黑卡下单预计省<i style="color:#FF0000;">¥11.59</i></span>
+                    </div>
+                    <div class="msg">
+                        <img src="../image/details/heika.png" alt="" style="visibility: hidden;">
+                        <span class="vtxt z-grey">含会员价、会员96折</span>
+                        <div class="becomevip">立即开卡</div>
+                    </div>
+                </div>
+            </dd>   
+            <div class="m-buyBox">
+                <span class="m-line-title float_left m-line-am-30">数量</span>
+                <em id="j_buyboxnum" class="buybox">
+                    <span class="ctrnum-wrap">
+                        <a href="javascript:void(0);" class="ctrnum-b ctrnum_l" hidefocus="true">-</a>
+                        <input type="text" name="" id="" class="ctrnum-qty" value="2">
+                        <a href="javascript:void(0);" class="ctrnum-b ctrnum_r">+</a>
+                    </span>
+                </em>
+            </div>
+            <div class="buyBtns">
+                <a href="javascript:void(0)" target="_blank" id="buyBtn">立即购买</a>
+                <a href="javascript:void(0)" id="addCart">加入购物车</a>
+            </div>
+        </dl>
+    </main>
+    <div class="m-rightbar" style="right: -68px; top: 211px; position: absolute; display: block;">
+        <ul class="clear_fix">
+            <li>
+                <a href="javascript:;" class="checkin j-checkin_btn">
+                    <i class="right-bar-icon1"></i>
+                    <span class="txt1">签到</span>
+                </a>
+            </li>
+            <li>
+                <a href="./shopping.html" class="checkin j-checkin_btn">
+                    <i class="right-bar-icon2"></i>
+                    <span class="txt1">购物车</span>
+                    <span class="num"></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="checkin j-checkin_btn">
+                    <i class="right-bar-icon3"></i>
+                    <span class="txt1">APP</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="checkin j-checkin_btn">
+                    <i class="right-bar-icon4"></i>
+                    <span class="txt1">TOP</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="page2"></div>
+
+
+
+    <script src="../jq/jquery-3.2.1.min.js"></script>
+    <script src="../jq/jquery.cookie.js"></script>
+    <script src="../js/detail.js"></script>
+
+    <script>
+        $(function(){
+            $("#page1").load("./_header.html");
+            $("#page2").load("./_footer.html");
+        })
+    </script>
+</body>
+</html>

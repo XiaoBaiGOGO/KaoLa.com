@@ -1,0 +1,168 @@
+footer{
+    background: #fff;
+    border-top: 1px solid #eaeaea;
+    margin-top:80px ;
+    .box{
+        width: 1100px;
+        margin: 0 auto;
+    }
+}
+#btmlist{
+    padding: 49px 0;
+    border-bottom: 1px solid #eaeaea;
+    color: #333333;
+    li{
+        float: left;
+        width: 233px;
+        margin-left: 42px;
+    }
+    .btmIcon{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 2px solid #d6d6d6;
+        text-align: center;
+        line-height: 44px;
+        font-size: 20px;
+        font-weight: 700;
+        float: left;
+        display: block;
+        margin-right: 12px;
+
+    }
+    .tit{
+        font-size: 18px;
+        font-weight: 700;
+        display: block;
+        line-height: 22px;
+
+    }
+    .desc{
+        font-size: 14px;
+        display: inline-block;
+        line-height: 22px;
+    }
+}
+
+#guideList{
+    padding: 45px 0 90px;
+    li{
+        float: left;
+        width: 110px;
+        padding: 0 0 0 21px;
+        height: 128px;
+    }
+    .first{
+        width: 218px;
+        padding-right: 40px;
+        padding-left: 0;
+        .logo_kaola_new{
+            display: block;
+            width: 220px;
+            height: 43px;
+            line-height: 45px;
+            margin-bottom: 20px;
+            background: url(../image/index/logo.png) no-repeat;
+            background-size: 210px auto;
+        }
+        .focuson {
+            height: 32px;
+            .itm {
+                position: relative;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+            .itm:hover .m-notice{
+                display: block;
+            }
+            .follow-us-icon {
+                width: 32px;
+                height: 32px;
+                background-position:50%;
+                background-repeat: no-repeat;
+            }
+            .weibo-icon{
+                background-image: url(../image/index/xinlang.png);
+                background-size:100%;
+            }
+            .nolink .weibo-icon{
+                background-image: url(../image/index/weixin.png);
+                background-size:100%;
+            }
+
+        }
+        .m-notice {
+            position: absolute;
+            left: -49px;
+            top: 24px;
+            display: none;
+            z-index: 10;
+            background: #fff;
+            text-align: center;
+            color: #333;
+            border: 1px solid #ededee;
+            padding: 10px;
+
+        }
+      
+    }
+
+    .f-wd100 {
+        width: 80px;
+        p{
+            margin: -4px 0 10px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        a{
+            line-height: 29px;
+            color: #333;
+            display: block;
+        }
+    }
+    .item {
+        width: 108px;
+        padding: 0;
+        text-align: center;
+        float: left;
+        img {
+            margin: 0 0 6px;
+        }
+    }
+    .last {
+        margin-left: 10px;
+    }
+
+}
+
+#aboutNESt{
+    position: relative;
+    padding: 20px 0;
+    background: #333;
+    line-height: 26px;
+    text-align: center;
+    color: #c2c2c2;
+    a{
+        color: #c2c2c2;
+    }
+    .m-license {
+        margin-left: 20px;
+        img {
+            margin-top: -2px;
+        }
+    }
+    .m-license{
+        margin-left: 20px;
+    }
+    .f-tac .KXYZ a:first-child img{
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    }
+    .f-tac .KXYZ a:last-child img{
+        height: 30px;
+        margin: 5px 0 0 10px;
+    }
+}
+
