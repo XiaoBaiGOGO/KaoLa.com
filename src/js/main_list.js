@@ -1,0 +1,12 @@
+require.config({
+    paths:{
+        jquery:'../jq/jquery-3.2.1.min',
+        list:'./lib/list',
+        pagination:'../jq/jquery.pagination',
+        lazyload:'../jq/jquery.lazyload'
+    }
+})
+require(['jquery','list'],function($,list){
+    list.render();
+    list.jiazai()
+})

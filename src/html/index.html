@@ -1284,14 +1284,8 @@
 
     
     <!-- 懒加载 -->
-    <script src="../jq/jquery-3.2.1.min.js"></script>
-    <script>
-         $(function(){
-            $("#headerHTML").load("./_header.html");
-            $("#footerHTML").load("./_footer.html");
-        })
-    </script>
-    <script src="../jq/jquery.lazyload.js"></script>
+    <!-- <script src="../jq/jquery-3.2.1.min.js"></script> -->
+    <!-- <script src="../jq/jquery.lazyload.js"></script>
     <script type="text/javascript" charset="utf-8">
         $(function() { //和拼接的元素放在一起。
             $(".lazy").lazyload({
@@ -1299,6 +1293,9 @@
             });
         });
     </script>
-    <script src="../js/index.js"></script>
+    <script src="../js/index.js"></script> -->
+    <!-- <script src="../js/require.js" data-main="../js/main.index"></script> -->
+    <script src="../js/lib/require.js" data-main="../js/main_index"></script>
+</head>
 </body>
 </html>

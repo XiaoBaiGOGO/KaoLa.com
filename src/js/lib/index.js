@@ -1,12 +1,6 @@
-require.config({
-    paths:{
-        jquery:'../../jq/jquery-3.2.1.min',
-        lazyload:'../../jq/jquery.lazyload.js',
+let baseUrl = "http://localhost/";
 
-    }
-})
-
-define(['jquery','lazyload'],function($,lazyload){
+define(['jquery'],function($){
     return{
         lunbo:function(){
             let ord = 0;
@@ -77,71 +71,75 @@ define(['jquery','lazyload'],function($,lazyload){
                     goImg(ord + 1);
                 })
             })
+        },
+        xuanfu:function(){
+            $(window).scroll( function() {
+     
+                const $docHead = $("#docHead")
+                const $docHeadWrap = $(".docHeadWrap")
+                const $logo_kaola_new = $(".logo_kaola_new")
+                const $searchiptbox = $("#searchiptbox")
+                const $shopcartnew = $(".shopcartnew")
+                const $topTabBox = $("#topTabBox")
+              
+                window.onscroll = function() {
+                    let scrollVal = document.documentElement.scrollTop || document.body.scrollTop;
+              
+                    // console.log(scrollVal)
+                    if (scrollVal > 100) {
+                        $docHead.css({ "position": "fixed", "top": "0px", "height": "50px", "width": "100%" })
+                        $docHeadWrap.css({ "height": "50px" })
+                        $logo_kaola_new.css({
+                            "top": "5px",
+                            "width": "162px",
+                            "height": "40px",
+                            "background-size": "auto 40px"
+                        })
+                        $searchiptbox.css({
+                            "top": "5px",
+              
+                        })
+                        $shopcartnew.css({
+                            "top": "5px",
+              
+                        })
+                        $topTabBox.css({ "margin-top": "100px" })
+                    } else {
+                        $docHead.css({ "position": "static", "height": "100px" })
+                        $logo_kaola_new.css({
+                            "top": "20px",
+                            "width": "330px",
+                            "height": "65px",
+                            "background-size": "auto 65px"
+                        })
+                        $searchiptbox.css({
+                            "top": "33px",
+              
+                        })
+                        $shopcartnew.css({
+                            "top": "33px",
+              
+                        })
+              
+                        $topTabBox.css({ "margin-top": "0" })
+                    }
+                }
+              });
+        },
+        jiazai:function(){
+            $(function(){
+                $("#headerHTML").load("./_header.html");
+                $("#footerHTML").load("./_footer.html");
+            })
         }
     }
 })
-!function($){
-// 轮播图
-   
 
 
-    // 顶部 两侧悬浮 
-$(window).scroll( function() {
-     
-    const $docHead = $("#docHead")
-    const $docHeadWrap = $(".docHeadWrap")
-    const $logo_kaola_new = $(".logo_kaola_new")
-    const $searchiptbox = $("#searchiptbox")
-    const $shopcartnew = $(".shopcartnew")
-    const $topTabBox = $("#topTabBox")
-  
-    window.onscroll = function() {
-        let scrollVal = document.documentElement.scrollTop || document.body.scrollTop;
-  
-        // console.log(scrollVal)
-        if (scrollVal > 100) {
-            $docHead.css({ "position": "fixed", "top": "0px", "height": "50px", "width": "100%" })
-            $docHeadWrap.css({ "height": "50px" })
-            $logo_kaola_new.css({
-                "top": "5px",
-                "width": "162px",
-                "height": "40px",
-                "background-size": "auto 40px"
-            })
-            $searchiptbox.css({
-                "top": "5px",
-  
-            })
-            $shopcartnew.css({
-                "top": "5px",
-  
-            })
-            $topTabBox.css({ "margin-top": "100px" })
-        } else {
-            $docHead.css({ "position": "static", "height": "100px" })
-            $logo_kaola_new.css({
-                "top": "20px",
-                "width": "330px",
-                "height": "65px",
-                "background-size": "auto 65px"
-            })
-            $searchiptbox.css({
-                "top": "33px",
-  
-            })
-            $shopcartnew.css({
-                "top": "33px",
-  
-            })
-  
-            $topTabBox.css({ "margin-top": "0" })
-        }
-    }
-  });
+// 顶部 两侧悬浮 
+
 //   $(window).on("load",$(".item_user") ,function(){
 //     if (localStorage.getItem('username')) {
 //         $('.item_user').html("考拉欢迎你！"+localStorage.getItem('username'));
 //     }
 //   })
- 
-}(jQuery)
