@@ -184,6 +184,9 @@
   background-color: #fff;
   border-radius: 24px 0 0 24px;
 }
+#docHead #topsearch .wrap input {
+  text-align: left;
+}
 #docHead #topsearch #topSearchInput {
   width: 410px;
   height: 24px;

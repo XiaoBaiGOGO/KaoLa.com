@@ -15,6 +15,14 @@ define(['jquery','cookie'],function($,cookie){
     return{
         jiazai:function(){
             $(function(){
+                $("#page1").load("./_header.html",function(){
+                    if(localStorage.getItem('username') !=null){
+                        $('.topNavLeft .item_user').html("考拉欢迎你！"+localStorage.getItem('username'))
+                        $('.topNavLeft .login').html("退出登录")
+                        $('.topNavLeft .outlogin').remove()
+                        $('.topNavLeft2').css("padding-left", "0px")
+                    }
+                });
                 $("#page2").load("./_footer.html");
             })
         },

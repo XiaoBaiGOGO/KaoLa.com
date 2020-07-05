@@ -1,6 +1,6 @@
 let baseUrl = "http://localhost/";
 
-define(['jquery'],function($){
+define(['jquery','lazyload'],function($){
     return{
         lunbo:function(){
             let ord = 0;
@@ -128,10 +128,20 @@ define(['jquery'],function($){
         },
         jiazai:function(){
             $(function(){
-                $("#headerHTML").load("./_header.html");
+                $("#headerHTML").load("./_header.html",function(){
+                    if(localStorage.getItem('username') !=null){
+                        $('.topNavLeft .item_user').html("考拉欢迎你！"+localStorage.getItem('username'))
+                        $('.topNavLeft .login').html("退出登录")
+                        $('.topNavLeft .outlogin').remove()
+                        $('.topNavLeft2').css("padding-left", "0px")
+                    }
+                   
+                });
                 $("#footerHTML").load("./_footer.html");
+                $("img.lazy").lazyload({ effect: "fadeIn" });
             })
         }
+        
     }
 })
 

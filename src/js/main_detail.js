@@ -1,8 +1,10 @@
 require.config({
     paths:{
         jquery:'../jq/jquery-3.2.1.min',
+
         cookie:'../jq/jquery.cookie',
-        detail:'./lib/detail'
+        detail:'./lib/detail',
+      
     }
 })
 require(['jquery','detail'],function($,detail){

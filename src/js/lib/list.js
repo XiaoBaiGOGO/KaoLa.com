@@ -149,21 +149,20 @@ define(['jquery','pagination','lazyload'], function($,pagination,lazyload){
         },
         jiazai:function(){
             $(function(){
-                $("#page1").load("./_header.html");
+                $("#page1").load("./_header.html",function(){
+                    if(localStorage.getItem('username') !=null){
+                        $('.topNavLeft .item_user').html("考拉欢迎你！"+localStorage.getItem('username'))
+                        $('.topNavLeft .login').html("退出登录")
+                        $('.topNavLeft .outlogin').remove()
+                        $('.topNavLeft2').css("padding-left", "0px")
+                    }
+                });
                 $("#page2").load("./_footer.html");
             })
         }
     }
     
 });
-
-    //1.渲染列表页的数据-默认渲染第一页
-  
-    //渲染的外部无法获取内部的元素对象，通过事件委托实现。
-
-    //2.分页思路
-    //告知后端当前请求的是第几页数据。将当前的页面页码传递给后端(get和page)
-
 
     //3.排序
 

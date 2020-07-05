@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>购物车</title>
-    <link rel="stylesheet" href="../css/shopping.css">
+    <link rel="stylesheet" href="../css/cart.css">
     <link rel="stylesheet" href="../css/reset.css">
 </head>
 <body>
@@ -13,10 +13,10 @@
         <nav id="topNav">
             <div class="topNavWrap">
                 <div class="topNavLeft">
-                    <span>考拉欢迎你！</span>
-                    <a href="./reg.html" class="login">登录</a>
+                    <span class="username">考拉欢迎你！</span>
+                    <a href="./login.html" class="login">登录</a>
                     <span class="sep">|</span>
-                    <a href="./login.html">免费注册</a>
+                    <a href="./reg.html" class="reg outlogin">免费注册</a>
                 </div>
                 <div class="topNavLeft2">
                     <a href="">手机考拉
@@ -257,8 +257,8 @@
                         <p>删除选中商品</p>
                     </div>
                     <div class="float_right">
-                        <p class="allgoods">已选商品 <em class="num">3</em>件 <span class="itm">总价(不含运费)：<em class="num">¥279.82</em></span> </p>
-                        <p class="allmoney">活动优惠: -¥0 <span class="itm">商品应付总计: ¥279.82</span></p>
+                        <p class="allgoods">已选商品 <em class="num">0</em>件 <span class="itm">总价(不含运费)：<em class="num">¥0</em></span> </p>
+                        <p class="allmoney">活动优惠: -¥0 <span class="itm">商品应付总计:0</span></p>
                         <a href="" class="gobuy ">去结算</a>
                     </div>
                 </div>
@@ -269,15 +269,10 @@
 
 
     
-    <script src="../jq/jquery-3.2.1.min.js"></script>
+    <!-- <script src="../jq/jquery-3.2.1.min.js"></script>
     <script src="../jq/jquery.cookie.js"></script>
-    <script src="../js/cart.js"></script>
+    <script src="../js/cart.js"></script> -->
 
-    <script>
-        $(function(){
-            $("#page2").load("./_footer.html");
-        })
-         
-    </script>
+    <script src="../js/lib/require.js" data-main="../js/main_cart"></script>
 </body>
 </html>
