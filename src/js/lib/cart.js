@@ -5,6 +5,7 @@ let arrnum = []; //存储商品的数量。
 define(['jquery','cookie'],function($,cookie){
     return{
         init:function(){
+            $("#page2").load("./_footer.html");
             if(localStorage.getItem('username') !=null){
                 $('#page1 .username').html("考拉欢迎你！"+localStorage.getItem('username'))
                 $('.topNavLeft .login').html("退出登录")
@@ -12,7 +13,7 @@ define(['jquery','cookie'],function($,cookie){
                 $('.topNavLeft2').css("padding-left", "0px")
             }
             $(window).on("scroll",function(){
-                let mainWrap=$('#mainWrap').height()-200
+                let mainWrap=$('#mainWrap').height()-400
         
                 if($(window).scrollTop()>mainWrap){
                     $("#totalbar").css({"position":"relative"})

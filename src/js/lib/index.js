@@ -128,6 +128,9 @@ define(['jquery','lazyload'],function($){
         },
         jiazai:function(){
             $(function(){
+                // $(".topNavLeft .login").on('click',function(){
+                //     localStorage.username=null
+                // })
                 $("#headerHTML").load("./_header.html",function(){
                     if(localStorage.getItem('username') !=null){
                         $('.topNavLeft .item_user').html("考拉欢迎你！"+localStorage.getItem('username'))
@@ -139,7 +142,19 @@ define(['jquery','lazyload'],function($){
                 });
                 $("#footerHTML").load("./_footer.html");
                 $("img.lazy").lazyload({ effect: "fadeIn" });
+               
             })
+        },
+        tab:function(){
+           const $lis=$('.img_pagebox li')
+           const $boxs=$('.prolist .itemgroup')
+
+           $lis.on('mouseover',function(){
+               console.log($(this).index())
+            //    console.log($boxs.eq($(this).index()).show().siblings('.prolist .itemgroup').hide())
+            $(this).addClass('licor').siblings('.img_pagebox li').removeClass('licor');
+            $boxs.eq($(this).index()).show().siblings('.itemgroup').hide()
+           })
         }
         
     }

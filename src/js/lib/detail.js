@@ -172,6 +172,15 @@ define(['jquery','cookie'],function($,cookie){
                 qtysum++
                 ctrnum.val(qtysum)
             })
+
+
+            $('.ctrnum-wrap input').on('input', function() {
+                let $reg = /^\d+$/g; //只能输入数字
+                let $value = $(this).val();
+                if (!$reg.test($value)) { //不是数字
+                    $(this).val(1);
+                }
+            });
         },//添加数量
 
         addCart:function(){

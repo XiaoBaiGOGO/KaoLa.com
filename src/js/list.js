@@ -147,13 +147,13 @@
 
     //3.排序
 
-  /*   $('button').eq(0).on('click', function () {
+  $('button').eq(0).on('click', function () {
         $.each(array_default, function (index, value) {
             $('.list ul').append(value);
         });
         return;
     });
-    $('button').eq(1).on('click', function () {
+   /*    $('button').eq(1).on('click', function () {
         for (let i = 0; i < array.length - 1; i++) {
             for (let j = 0; j < array.length - i - 1; j++) {
                 prev = parseFloat(array[j].find('.price').html().substring(1));

@@ -10,4 +10,5 @@ require(['jquery','index'],function($,index){
     index.lunbo();
     index.xuanfu()
     index.jiazai()
+    index.tab()
 })
